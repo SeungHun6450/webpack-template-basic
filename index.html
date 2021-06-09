@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello webpack!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+</head>
+<body>
+  <!--
+   webpack 설치 방법
+  1. npm i -D webpack webpack-cli webpack-dev-server@next
+  2. webpack.config.js생성 후 output까지 작성
+  이후 npm run build
+  3.npm i -D html-webpack-plugin
+  webpack.config.js-> output 아래 작성 후 npm run dev
+  4. npm i -D copy-webpack-plugin 
+  webpack.config.js->  const CopyPlugin = require('copy-webpack-plugin'), plugins에 추가
+  5. npm run build
+  6. npm i -D css-loader style-loader
+  webpack.config.js-> output과  plugins사이
+  7. npm i -D sass-loader sass
+  webpack.config.js-> module에 use에 css밑에 추가
+  8. 공급업체 접두사 --webkit 추가를 위해
+  npm i -D postcss autoprefixer postcss-loader
+  webpack.config.js-> module에 use에 css밑에 추가
+  package.json 에 
+  "browserslist": [
+    ">1%",
+    "last 2 versions"
+  ]
+  추가
+  .postcssrc.js 추가 밑 내용 추가
+  9. babel 설치를 위해
+  npm i -D @babel/core @babel/preset-env @babel/plugin-transform-runtime
+  .babelrc.js 생성 및 작성
+  webpack.config.js-> module에 rule에 test로 새로 추가
+  npm i -D babel-loader 설치
+-->
+  <h1>Hello Webpack!!</h1>
+  <img src="./images/logo.png" alt="HEROPY" />
+</body>
+</html>
